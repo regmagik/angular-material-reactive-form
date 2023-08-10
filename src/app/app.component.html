@@ -3,7 +3,10 @@
 	<div class="container">
 		<div class='box'>
 			<form [formGroup]="materialForm">
-			<h1>Hello, Angular Material form</h1>
+			<h1>Angular Material Form</h1>
+  <p>This is a playground app to implement a form that changes based on user input.</p>
+<p>Select an option to see more options in a sub form.</p>
+      
 			<mat-radio-group formControlName="option" aria-label="Select an option">
 				<mat-radio-button value="1">Option 1</mat-radio-button>
 				<mat-radio-button value="2">Option 2</mat-radio-button>
@@ -12,7 +15,7 @@
 	</div>
 
 	<div class='box' *ngIf="showIt" @myInsertRemoveTrigger>
-		<h1>Hello, Angular Reactive form!</h1>
+		<h2>Angular Reactive form</h2>
 		<form [formGroup]="form">
 			<input type="radio" formControlName="food" value="beef" > Beef
 			<input type="radio" formControlName="food" value="lamb"> Lamb
@@ -21,7 +24,7 @@
 	</div>
   
 	<div class='box'>
-		<h2 >Next Steps</h2>
+		<h2>Next Steps</h2>
 	</div>
   <p>What do you want to do next with your app?</p>
 
